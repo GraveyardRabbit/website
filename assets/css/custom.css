@@ -1,0 +1,490 @@
+/* Custom styles for the portfolio */
+
+/* Navigation button styles */
+.nav-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    min-width: 90px;
+    height: auto;
+    background: rgba(27, 31, 34, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-btn.active {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.75);
+    color: #ffffff;
+}
+
+/* Primary buttons */
+.btn-primary {
+    display: inline-block;
+    padding: 12px 24px;
+    min-width: 120px;
+    background: rgba(27, 31, 34, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-primary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+}
+
+/* Secondary buttons */
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 20px;
+    min-width: 100px;
+    background: rgba(27, 31, 34, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Background image overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Form styles */
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(27, 31, 34, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(27, 31, 34, 0.9);
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(27, 31, 34, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    resize: vertical;
+    min-height: 120px;
+    transition: all 0.2s ease;
+}
+
+.form-textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(27, 31, 34, 0.9);
+}
+
+.form-select {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(27, 31, 34, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(27, 31, 34, 0.9);
+}
+
+.form-select option {
+    background: rgba(27, 31, 34, 0.95);
+    color: #ffffff;
+}
+
+.form-checkbox {
+    width: 16px;
+    height: 16px;
+    background: rgba(27, 31, 34, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-checkbox:checked {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Error states */
+.field-error input,
+.field-error textarea,
+.field-error select {
+    border-color: #ef4444 !important;
+    background: rgba(239, 68, 68, 0.1) !important;
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.success-message {
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid #22c55e;
+    color: #22c55e;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Social icons */
+.social-icon {
+    @apply inline-flex items-center justify-center w-12 h-12 bg-white/10 border border-white/20 text-white rounded-full transition-all duration-300 hover:bg-white/20 hover:border-white/40 hover:transform hover:scale-110;
+}
+
+/* Image styles */
+.portfolio-image {
+    @apply rounded-lg shadow-xl border border-white/10 transition-transform duration-300 hover:scale-105;
+}
+
+/* 2D Art Gallery styles */
+.artwork-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artwork-item:hover {
+    transform: translateY(-5px);
+}
+
+.artwork-item:hover .portfolio-image {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Gallery grid responsiveness */
+@media (max-width: 768px) {
+    .artwork-item {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Art Process Section */
+.process-container {
+    margin: 4rem 0;
+    padding: 3rem 0;
+}
+
+.process-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.process-step:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.process-step.reverse {
+    flex-direction: row-reverse;
+}
+
+.process-step.reverse:hover {
+    transform: translateX(-10px);
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(147, 51, 234, 0.2));
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 2rem;
+    flex-shrink: 0;
+}
+
+.step-image {
+    width: 200px;
+    height: 150px;
+    background: rgba(27, 31, 34, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0 2rem;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.step-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.step-content {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.step-title {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.step-description {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.step-tools {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tool-tag {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Process header */
+.process-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.process-header h3 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.process-header p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Mobile responsiveness for process */
+@media (max-width: 768px) {
+    .process-step {
+        flex-direction: column !important;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .process-step:hover,
+    .process-step.reverse:hover {
+        transform: translateY(-5px);
+    }
+    
+    .step-number {
+        margin: 0 0 1rem 0;
+    }
+    
+    .step-image {
+        margin: 1rem 0;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .step-content {
+        padding: 0;
+    }
+}
+
+/* Sketchfab embed styles */
+.sketchfab-embed-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sketchfab-embed-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 3D model container */
+.model-container {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.model-container h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.model-container p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading animation */
+.is-preload * {
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+}
+
+/* Responsive navbar improvements */
+@media (max-width: 768px) {
+    .nav-btn {
+        min-width: 80px;
+        padding: 10px 16px;
+        font-size: 0.75rem;
+        letter-spacing: 0.15em;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-btn {
+        min-width: 70px;
+        padding: 8px 12px;
+        font-size: 0.7rem;
+        letter-spacing: 0.1em;
+    }
+}

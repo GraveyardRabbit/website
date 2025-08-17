@@ -1645,3 +1645,282 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* Contact Form Validation Styles */
+	.field.error input,
+	.field.error textarea,
+	.field.error select {
+		border-color: #ff6b6b !important;
+		box-shadow: 0 0 0 1px #ff6b6b !important;
+	}
+
+	.error-message {
+		display: block;
+		color: #ff6b6b;
+		font-size: 0.8rem;
+		margin-top: 0.5rem;
+		font-style: italic;
+	}
+
+	.success-message {
+		background: rgba(76, 175, 80, 0.1);
+		border: 1px solid #4caf50;
+		color: #4caf50;
+		padding: 1rem;
+		margin-bottom: 1.5rem;
+		border-radius: 4px;
+		text-align: center;
+		font-weight: 600;
+	}
+
+	/* Enhanced form styling */
+	#contact-form {
+		position: relative;
+	}
+
+	#contact-form input:focus,
+	#contact-form textarea:focus,
+	#contact-form select:focus {
+		border-color: #ffffff;
+		box-shadow: 0 0 0 1px #ffffff;
+		outline: none;
+	}
+
+	#contact-form .field label {
+		font-weight: 600;
+		color: #ffffff;
+	}
+
+	#contact-form .field input[type="checkbox"] + label {
+		font-weight: 400;
+		font-size: 0.9rem;
+	}
+
+/* Multi-page Layout Fixes */
+	/* Always show header and footer on multi-page setup */
+	body.is-article-visible #header {
+		opacity: 1 !important;
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		-ms-transform: none !important;
+		transform: none !important;
+		-moz-filter: none !important;
+		-webkit-filter: none !important;
+		-ms-filter: none !important;
+		filter: none !important;
+	}
+
+	body.is-article-visible #footer {
+		opacity: 1 !important;
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		-ms-transform: none !important;
+		transform: none !important;
+		-moz-filter: none !important;
+		-webkit-filter: none !important;
+		-ms-filter: none !important;
+		filter: none !important;
+	}
+
+	/* Ensure main content is visible */
+	#main {
+		display: block !important;
+	}
+
+	/* Better content spacing and centering for inner pages */
+	body.inner-page #main {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 3rem 2rem;
+	}
+
+	body.inner-page #main article {
+		text-align: center;
+		padding: 3rem 2rem;
+		background: rgba(27, 31, 34, 0.8);
+		border-radius: 8px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+		margin: 0 auto;
+	}
+
+	body.inner-page #main article h2 {
+		margin-bottom: 2rem;
+		font-size: 2rem;
+		color: #ffffff;
+	}
+
+	body.inner-page #main article p {
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+		color: rgba(255, 255, 255, 0.8);
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	body.inner-page #main article .image.main {
+		margin: 2rem 0;
+		text-align: center;
+	}
+
+	body.inner-page #main article .image.main img {
+		border-radius: 8px;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	}
+
+	/* Form improvements for contact page */
+	body.inner-page #contact-form {
+		text-align: left;
+		max-width: 600px;
+		margin: 2rem auto;
+	}
+
+	body.inner-page #contact-form .fields {
+		margin-bottom: 2rem;
+	}
+
+	body.inner-page #contact-form .field {
+		margin-bottom: 1.5rem;
+	}
+
+	body.inner-page #contact-form .actions {
+		text-align: center;
+		margin-top: 2rem;
+	}
+
+	/* Active navigation styling */
+	#header nav ul li a.active {
+		color: #ffffff;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 4px;
+	}
+
+	/* Horizontal navbar for inner pages */
+	body.inner-page #header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10000;
+		background: rgba(27, 31, 34, 0.95);
+		backdrop-filter: blur(10px);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		padding: 1.5rem 0;
+		height: auto;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	body.inner-page {
+		padding-top: 100px;
+	}
+
+	body.inner-page #header .content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 3rem;
+		gap: 2rem;
+	}
+
+	body.inner-page #header .content .inner {
+		text-align: left;
+		padding: 0;
+		margin: 0;
+		flex-shrink: 0;
+	}
+
+	body.inner-page #header .content .inner h1 {
+		font-size: 1.4rem;
+		margin: 0;
+		line-height: 1.2;
+		color: #ffffff;
+		font-weight: 600;
+		letter-spacing: 0.05em;
+	}
+
+	body.inner-page #header .content .inner p {
+		display: none;
+	}
+
+	body.inner-page #header nav {
+		margin: 0;
+		flex-grow: 1;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	body.inner-page #header nav ul {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	body.inner-page #header nav ul li {
+		margin: 0;
+		border: none;
+	}
+
+	body.inner-page #header nav ul li a {
+		display: inline-block;
+		padding: 0.75rem 1.25rem;
+		color: rgba(255, 255, 255, 0.8);
+		text-decoration: none;
+		border: 1px solid rgba(255, 255, 255, 0.25);
+		border-radius: 6px;
+		font-size: 0.75rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		transition: all 0.3s ease;
+		min-width: 80px;
+		text-align: center;
+		white-space: nowrap;
+		background: rgba(255, 255, 255, 0.05);
+	}
+
+	body.inner-page #header nav ul li a:hover {
+		color: #ffffff;
+		border-color: rgba(255, 255, 255, 0.6);
+		background: rgba(255, 255, 255, 0.15);
+		transform: translateY(-1px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	body.inner-page #header nav ul li a.active {
+		color: #ffffff;
+		background: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.7);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	}
+
+	/* Responsive navbar */
+	@media screen and (max-width: 736px) {
+		body.inner-page #header .content {
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		body.inner-page #header nav ul {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		body.inner-page #header nav ul li {
+			margin: 0.25rem;
+		}
+
+		body.inner-page #header nav ul li a {
+			padding: 0.4rem 0.8rem;
+			font-size: 0.7rem;
+		}
+
+		body.inner-page {
+			padding-top: 120px;
+		}
+	}

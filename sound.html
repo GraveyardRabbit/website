@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sound - Charlie Vervaecke Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							'dark-bg': '#1b1f22',
+							'dark-card': 'rgba(27, 31, 34, 0.8)',
+							'border-light': 'rgba(255, 255, 255, 0.1)',
+						},
+						fontFamily: {
+							'source': ['Source Sans Pro', 'sans-serif'],
+						}
+					}
+				}
+			}
+		</script>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	</head>
+	<body class="font-source bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen text-white">
+		<!-- Navbar -->
+		<nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-lg border-b border-white/10">
+			<div class="container mx-auto px-4">
+				<div class="flex items-center justify-between py-4">
+					<!-- Logo/Brand -->
+					<div class="flex items-center">
+						<a href="index.html" class="text-xl font-light tracking-wide text-white hover:text-gray-300 transition-colors">
+							Charlie Vervaecke
+						</a>
+					</div>
+					
+					<!-- Desktop Navigation -->
+					<div class="hidden md:flex items-center gap-3">
+						<a href="index.html" class="nav-btn">Home</a>
+						<a href="intro.html" class="nav-btn">Intro</a>
+						<a href="3dart.html" class="nav-btn">3D Art</a>
+						<a href="2dart.html" class="nav-btn">2D Art</a>
+						<a href="sound.html" class="nav-btn active">Sound</a>
+						<a href="about.html" class="nav-btn">About</a>
+						<a href="contact.html" class="nav-btn">Contact</a>
+					</div>
+					
+					<!-- Mobile menu button -->
+					<button class="md:hidden text-white hover:text-gray-300" onclick="toggleMobileMenu()">
+						<i class="fas fa-bars text-xl"></i>
+					</button>
+				</div>
+				
+				<!-- Mobile Navigation -->
+				<div id="mobile-menu" class="hidden md:hidden pb-4">
+					<div class="flex flex-col gap-2">
+						<a href="index.html" class="nav-btn">Home</a>
+						<a href="intro.html" class="nav-btn">Intro</a>
+						<a href="3dart.html" class="nav-btn">3D Art</a>
+						<a href="2dart.html" class="nav-btn">2D Art</a>
+						<a href="sound.html" class="nav-btn active">Sound</a>
+						<a href="about.html" class="nav-btn">About</a>
+						<a href="contact.html" class="nav-btn">Contact</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Main Content -->
+		<main class="pt-24 min-h-screen">
+			<div class="container mx-auto px-4 py-12">
+				<div class="max-w-4xl mx-auto">
+					<article class="bg-dark-card backdrop-blur-sm rounded-lg p-8 md:p-12 shadow-2xl border border-white/10 fade-in">
+						<h2 class="text-4xl md:text-5xl font-light mb-8 text-center text-white">Sound</h2>
+
+						<!-- Film Work Section -->
+						<div class="border-t border-white/20 pt-8 mt-12">
+							<div class="text-center my-8">
+								<img src="images/pic02.jpg" alt="3D Art - Ray" class="portfolio-image w-full max-w-2xl mx-auto" />
+							</div>
+							<p class="text-center">The shortfilm "Ray" can be seen <a href="https://www.youtube.com/watch?v=95zk_y6tiYY" class="text-blue-400 hover:text-blue-300 underline">here</a>.</p>
+
+							<div class="text-center my-8">
+								<img src="images/pic01.jpg" alt="3D Art - The Collector" class="portfolio-image w-full max-w-2xl mx-auto" />
+							</div>
+							<p class="text-center">The shortfilm "The Collector" can be seen <a href="https://www.youtube.com/watch?v=UkJngyHt6nA" class="text-blue-400 hover:text-blue-300 underline">here</a>.</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="text-center py-8 border-t border-white/10">
+			<p class="text-gray-400 text-sm">&copy; Work in progress</p>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/multipage.js"></script>
+
+	</body>
+</html>

@@ -9,358 +9,100 @@
 		<title>Charlie Vervaecke Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							'dark-bg': '#1b1f22',
+							'dark-card': 'rgba(27, 31, 34, 0.8)',
+							'border-light': 'rgba(255, 255, 255, 0.1)',
+						},
+						fontFamily: {
+							'source': ['Source Sans Pro', 'sans-serif'],
+						},
+						backdropBlur: {
+							'xs': '2px',
+						}
+					}
+				}
+			}
+		</script>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	</head>
-	<body class="is-preload">
+	<body class="font-source bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen text-white overflow-x-hidden">
+		<!-- Background overlay -->
+		<div class="fixed inset-0 bg-black opacity-50 z-0"></div>
+		<div class="fixed inset-0 bg-cover bg-center bg-no-repeat z-0" style="background-image: url('images/bg.jpg');"></div>
+		
+		<!-- Main content -->
+		<div class="relative z-10 min-h-screen flex flex-col">
+			<!-- Header -->
+			<header class="text-center py-20">
+				<div class="container mx-auto px-4">
+					<div class="mb-8">
+						<h1 class="text-6xl md:text-7xl font-light mb-4 tracking-wide">Charlie Vervaecke</h1>
+						<p class="text-xl md:text-2xl text-gray-300 font-light tracking-wider">Where audio and visuals collide</p>
+					</div>
+					
+					<nav class="mt-12">
+						<ul class="flex flex-wrap justify-center gap-2 md:gap-3 max-w-4xl mx-auto">
+							<li><a href="index.html" class="nav-btn active">Home</a></li>
+							<li><a href="intro.html" class="nav-btn">Intro</a></li>
+							<li><a href="3dart.html" class="nav-btn">3D Art</a></li>
+							<li><a href="2dart.html" class="nav-btn">2D Art</a></li>
+							<li><a href="sound.html" class="nav-btn">Sound</a></li>
+							<li><a href="about.html" class="nav-btn">About</a></li>
+							<li><a href="contact.html" class="nav-btn">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header">
+			<!-- Main Content -->
+			<main class="flex-grow flex items-center justify-center py-12">
+				<div class="container mx-auto px-4 max-w-4xl">
+					<article class="bg-dark-card backdrop-blur-sm rounded-lg p-8 md:p-12 text-center shadow-2xl border border-white/10">
+						<h2 class="text-4xl md:text-5xl font-light mb-8 text-white">Welcome</h2>
 						
-						<div class="content">
-							<div class="inner">
-								<h1>Charlie Vervaecke</h1>
-								<p>Where audio and visuals collide</p>
+						<div class="space-y-6 text-lg text-gray-200 leading-relaxed">
+							<p>Hello! My name is Charlie, I have a degree in 3D & VFX: Stylized & Character Design at Digital Arts & Entertainment Howest, and I'm currently majoring in Game Sound Integration.</p>
+							<p>Throughout my studies, I've built a solid foundation in crafting 3D models and sound effects. Working with CreatorGalaxy, entering game jams, and working on short film projects has helped me improve my skills in asset creation, sound design, and problem-solving in creative workflows. I really enjoy the challenge of bringing visuals and audio together to create something immersive and engaging.</p>
+						</div>
+						
+						<div class="mt-12">
+							<h3 class="text-2xl font-light mb-6 text-white">Explore my work:</h3>
+							<div class="flex flex-wrap justify-center gap-4 mb-8">
+								<a href="3dart.html" class="btn-primary">3D Art</a>
+								<a href="2dart.html" class="btn-primary">2D Art</a>
+								<a href="sound.html" class="btn-primary">Sound</a>
+							</div>
+							
+							<h3 class="text-xl font-light mb-4 text-white">Quick Links:</h3>
+							<div class="flex flex-wrap justify-center gap-4">
+								<a href="intro.html" class="btn-secondary">Learn More About Me</a>
+								<a href="contact.html" class="btn-secondary">Get In Touch</a>
 							</div>
 						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+					</article>
+				</div>
+			</main>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Intro -->
-						<article id="intro">
-							<h2 class="major">Intro</h2>
-							<!--<span class="image main"><img src="images/pic01.jpg" alt="" /></span>-->
-							<p>Hello! My name is Charlie, I have a degree in 3D & VFX: Stylized & Character Design at Digital Arts & Entertainment Howest, and I'm currently majoring in Game Sound Integration. Hop on over to my <a href="#work"> work</a>!</p>
-							<p>Throughout my studies, I’ve built a solid foundation in crafting 3D models and sound effects. Working with CreatorGalaxy, entering game jams, and working on short film projects has helped me improve my skills in asset creation, sound design, and problem-solving in creative workflows. I really enjoy the challenge of bringing visuals and audio together to create something immersive and engaging.</p>
-						</article>
-
-						<!-- Work -->
-						<article id="work">
-							<h2 class="major">Work</h2>
-							<p>Here is some of my best work showcased.</p>
-							<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-							<p>The shortfilm "Ray" can be seen <a href="https://www.youtube.com/watch?v=95zk_y6tiYY">here</a>.</p>
-							<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-							<p>The shortfilm "The Collector" can be seen <a href="https://www.youtube.com/watch?v=UkJngyHt6nA">here</a>.</p>
-
-						</article>
-
-						<!-- About -->
-						<article id="about">
-							<h2 class="major">Where to find me</h2>
-							<!--<span class="image main"><img src="images/pic03.jpg" alt="" /></span>-->
-							<p>For art related works: Find <a href="https://graveyardrabbit.artstation.com/">My Artstation</a> here. Find <a href="https://sketchfab.com/CharlieVervaecke">My Sketchfab</a> here. </p>
-							<p>For sound related works: Find <a href="https://www.youtube.com/@graveyardrabbit">My Youtube</a> here.</p>
-							<p>General socials: Find <a href="https://www.linkedin.com/in/charlie-vervaecke/">My Linkedin</a> here.</p> 
-						</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<p>Coming soon.</p>
-								<!--<form method="post" action="#">
-		<div class="fields">
-			<div class="field half">
-				<label for="name">Name</label>
-				<input type="text" name="name" id="name" />
-			</div>
-			<div class="field half">
-				<label for="email">Email</label>
-				<input type="text" name="email" id="email" />
-			</div>
-			<div class="field">
-				<label for="message">Message</label>
-				<textarea name="message" id="message" rows="4"></textarea>
-			</div>
+			<!-- Footer -->
+			<footer class="text-center py-8">
+				<p class="text-gray-400 text-sm">&copy; Work in progress</p>
+			</footer>
 		</div>
-		<ul class="actions">
-			<li><input type="submit" value="Send Message" class="primary" /></li>
-			<li><input type="reset" value="Reset" /></li>
-		</ul>
-	</form>
-	<ul class="icons">
-		<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-		<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-		<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-		<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>-->
-								
-								</ul>
-							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Work in progress</p>
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/multipage.js"></script>
 
 	</body>
 </html>
