@@ -16,7 +16,7 @@
 				theme: {
 					extend: {
 						colors: {
-							'dark-bg': '#181621',
+							'dark-bg': '#1c1b21',
 							'light-bg': '#302e36',
 							'text-color': '#e7eff2',
 							'accent-color': '#0b99ea',
@@ -36,7 +36,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	</head>
-	<body class="font-source min-h-screen text-white overflow-x-hidden" style="background: linear-gradient(135deg, #181621 0%, #302e36 100%);">
+	<body class="font-source min-h-screen text-white overflow-x-hidden is-preload" style="background: linear-gradient(135deg, #181621 0%, #302e36 100%);">
 		<!-- Background gradient is now applied directly to body -->
 		
 		<!-- Main content -->
@@ -44,12 +44,12 @@
 			<!-- Header -->
 			<header class="text-center py-20">
 				<div class="container mx-auto px-4">
-					<div class="mb-8">
+					<div class="mb-8 fade-in">
 						<h1 class="text-6xl md:text-7xl font-light mb-4 tracking-wide">Charlie Vervaecke</h1>
 						<p class="text-xl md:text-2xl text-gray-300 font-light tracking-wider">Where audio and visuals collide</p>
 					</div>
 					
-					<nav class="mt-12">
+					<nav class="mt-12 fade-in">
 						<ul class="flex flex-wrap justify-center gap-2 md:gap-3 max-w-4xl mx-auto">
 							<li><a href="index.html" class="nav-btn active">Home</a></li>
 							<li><a href="intro.html" class="nav-btn">Intro</a></li>
@@ -65,7 +65,7 @@
 			<!-- Main Content -->
 			<main class="flex-grow flex items-center justify-center py-12">
 				<div class="container mx-auto px-4 max-w-4xl">
-					<article class="bg-dark-card backdrop-blur-sm rounded-lg p-8 md:p-12 text-center shadow-2xl border border-white/10">
+					<article class="bg-dark-card backdrop-blur-sm rounded-lg p-8 md:p-12 text-center shadow-2xl border border-white/10 fade-in">
 						<h2 class="text-4xl md:text-5xl font-light mb-8 text-white">Welcome</h2>
 						
 						<div class="space-y-6 text-lg text-gray-200 leading-relaxed">
@@ -92,7 +92,7 @@
 			</main>
 
 			<!-- Footer -->
-			<footer class="text-center py-8">
+			<footer class="text-center py-8 fade-in">
 				<p class="text-gray-400 text-sm">&copy; 2025 Charlie Vervaecke</p>
 			</footer>
 		</div>
@@ -103,6 +103,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/multipage.js"></script>
+			<script>
+				// Remove preload class after page loads to trigger animations
+				window.addEventListener('load', function() {
+					setTimeout(function() {
+						document.body.classList.remove('is-preload');
+					}, 100);
+				});
+			</script>
 
 	</body>
 </html>
