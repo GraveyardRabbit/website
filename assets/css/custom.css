@@ -1,4 +1,10 @@
 /* Custom styles for the portfolio */
+:root {
+    --dark-bg: #1c1b21;
+    --light-bg: #302e36;
+    --text-color: #e7eff2;
+    --accent-color: #0b99ea;
+}
 
 /* Navigation button styles */
 .nav-btn {
@@ -6,10 +12,10 @@
     padding: 12px 20px;
     min-width: 90px;
     height: auto;
-    background: rgba(27, 31, 34, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: var(--dark-bg);
+    border: 1px solid rgba(231, 239, 242, 0.25);
     border-radius: 4px;
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--text-color);
     text-decoration: none;
     text-align: center;
     font-size: 0.8rem;
@@ -23,14 +29,14 @@
 }
 
 .nav-btn:hover {
-    background: rgba(255, 255, 255, 0.075);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 0.9);
+    background: var(--light-bg);
+    border-color: var(--accent-color);
+    color: #ffffff;
 }
 
 .nav-btn.active {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.75);
+    background: var(--accent-color);
+    border-color: var(--accent-color);
     color: #ffffff;
 }
 
@@ -39,10 +45,10 @@
     display: inline-block;
     padding: 12px 24px;
     min-width: 120px;
-    background: rgba(27, 31, 34, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: var(--dark-bg);
+    border: 1px solid var(--accent-color);
     border-radius: 4px;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-color);
     text-decoration: none;
     text-align: center;
     font-size: 0.8rem;
@@ -56,8 +62,8 @@
 }
 
 .btn-primary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.6);
+    background: var(--accent-color);
+    border-color: var(--accent-color);
     color: #ffffff;
 }
 
@@ -66,10 +72,10 @@
     display: inline-block;
     padding: 12px 20px;
     min-width: 100px;
-    background: rgba(27, 31, 34, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: var(--light-bg);
+    border: 1px solid rgba(231, 239, 242, 0.25);
     border-radius: 4px;
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--text-color);
     text-decoration: none;
     text-align: center;
     font-size: 0.8rem;
@@ -83,9 +89,9 @@
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.075);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 0.9);
+    background: var(--dark-bg);
+    border-color: var(--accent-color);
+    color: #ffffff;
 }
 
 /* Background image overlay */
@@ -110,7 +116,8 @@ body::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--light-bg) 100%);
+    opacity: 0.9;
     z-index: -1;
 }
 
@@ -118,31 +125,31 @@ body::after {
 .form-input {
     width: 100%;
     padding: 12px 16px;
-    background: rgba(27, 31, 34, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--dark-bg);
+    border: 1px solid rgba(231, 239, 242, 0.2);
     border-radius: 4px;
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 0.9rem;
     transition: all 0.2s ease;
 }
 
 .form-input::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(231, 239, 242, 0.5);
 }
 
 .form-input:focus {
     outline: none;
-    border-color: rgba(255, 255, 255, 0.5);
-    background: rgba(27, 31, 34, 0.9);
+    border-color: var(--accent-color);
+    background: var(--light-bg);
 }
 
 .form-textarea {
     width: 100%;
     padding: 12px 16px;
-    background: rgba(27, 31, 34, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--dark-bg);
+    border: 1px solid rgba(231, 239, 242, 0.2);
     border-radius: 4px;
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 0.9rem;
     resize: vertical;
     min-height: 120px;
@@ -150,22 +157,22 @@ body::after {
 }
 
 .form-textarea::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(231, 239, 242, 0.5);
 }
 
 .form-textarea:focus {
     outline: none;
-    border-color: rgba(255, 255, 255, 0.5);
-    background: rgba(27, 31, 34, 0.9);
+    border-color: var(--accent-color);
+    background: var(--light-bg);
 }
 
 .form-select {
     width: 100%;
     padding: 12px 16px;
-    background: rgba(27, 31, 34, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--dark-bg);
+    border: 1px solid rgba(231, 239, 242, 0.2);
     border-radius: 4px;
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 0.9rem;
     transition: all 0.2s ease;
     cursor: pointer;
@@ -173,27 +180,27 @@ body::after {
 
 .form-select:focus {
     outline: none;
-    border-color: rgba(255, 255, 255, 0.5);
-    background: rgba(27, 31, 34, 0.9);
+    border-color: var(--accent-color);
+    background: var(--light-bg);
 }
 
 .form-select option {
-    background: rgba(27, 31, 34, 0.95);
-    color: #ffffff;
+    background: var(--dark-bg);
+    color: var(--text-color);
 }
 
 .form-checkbox {
     width: 16px;
     height: 16px;
-    background: rgba(27, 31, 34, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: var(--dark-bg);
+    border: 1px solid rgba(231, 239, 242, 0.3);
     border-radius: 3px;
     cursor: pointer;
 }
 
 .form-checkbox:checked {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.6);
+    background: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 /* Error states */
@@ -212,9 +219,9 @@ body::after {
 }
 
 .success-message {
-    background: rgba(34, 197, 94, 0.1);
-    border: 1px solid #22c55e;
-    color: #22c55e;
+    background: rgba(11, 153, 234, 0.1);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
     padding: 1rem;
     border-radius: 4px;
     text-align: center;
@@ -263,15 +270,15 @@ body::after {
     align-items: center;
     margin-bottom: 3rem;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(48, 46, 54, 0.3);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(231, 239, 242, 0.1);
     transition: all 0.3s ease;
 }
 
 .process-step:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(48, 46, 54, 0.5);
+    border-color: var(--accent-color);
     transform: translateX(10px);
 }
 
@@ -289,8 +296,8 @@ body::after {
     justify-content: center;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(147, 51, 234, 0.2));
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, var(--accent-color), var(--light-bg));
+    border: 2px solid var(--accent-color);
     border-radius: 50%;
     color: #ffffff;
     font-size: 1.2rem;
@@ -302,13 +309,13 @@ body::after {
 .step-image {
     width: 200px;
     height: 150px;
-    background: rgba(27, 31, 34, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--dark-bg);
+    border: 1px solid rgba(231, 239, 242, 0.2);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(231, 239, 242, 0.5);
     font-size: 0.8rem;
     text-align: center;
     margin: 0 2rem;
@@ -329,14 +336,14 @@ body::after {
 }
 
 .step-title {
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 1.3rem;
     font-weight: 300;
     margin-bottom: 0.5rem;
 }
 
 .step-description {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(231, 239, 242, 0.8);
     line-height: 1.6;
     font-size: 0.9rem;
 }
@@ -349,9 +356,9 @@ body::after {
 }
 
 .tool-tag {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.9);
+    background: rgba(48, 46, 54, 0.5);
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.7rem;
@@ -366,14 +373,14 @@ body::after {
 }
 
 .process-header h3 {
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 1rem;
 }
 
 .process-header p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(231, 239, 242, 0.8);
     font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto;
@@ -436,14 +443,14 @@ body::after {
 }
 
 .model-container h3 {
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 300;
     margin-bottom: 1rem;
 }
 
 .model-container p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(231, 239, 242, 0.8);
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
 }

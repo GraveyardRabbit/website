@@ -67,8 +67,6 @@
 
 	// Contact form validation and handling.
 		$('#contact-form').on('submit', function(e) {
-			e.preventDefault();
-			
 			var form = $(this);
 			var name = $('#name').val().trim();
 			var email = $('#email').val().trim();
@@ -76,45 +74,41 @@
 			var isValid = true;
 			
 			// Clear previous error states
-			form.find('.field').removeClass('error');
+			form.find('.field-error').removeClass('field-error');
 			form.find('.error-message').remove();
 			
 			// Validate required fields
 			if (!name) {
-				$('#name').closest('.field').addClass('error');
+				$('#name').parent().addClass('field-error');
 				$('#name').after('<span class="error-message">Name is required</span>');
 				isValid = false;
 			}
 			
 			if (!email) {
-				$('#email').closest('.field').addClass('error');
+				$('#email').parent().addClass('field-error');
 				$('#email').after('<span class="error-message">Email is required</span>');
 				isValid = false;
 			} else if (!isValidEmail(email)) {
-				$('#email').closest('.field').addClass('error');
+				$('#email').parent().addClass('field-error');
 				$('#email').after('<span class="error-message">Please enter a valid email</span>');
 				isValid = false;
 			}
 			
 			if (!message) {
-				$('#message').closest('.field').addClass('error');
+				$('#message').parent().addClass('field-error');
 				$('#message').after('<span class="error-message">Message is required</span>');
 				isValid = false;
 			}
 			
-			if (isValid) {
-				// Show success message (since we can't actually send email without backend)
-				var successMsg = $('<div class="success-message">Thank you for your message! I\'ll get back to you soon.</div>');
-				form.prepend(successMsg);
-				
-				// Reset form after delay
-				setTimeout(function() {
-					form[0].reset();
-					successMsg.fadeOut(function() {
-						$(this).remove();
-					});
-				}, 3000);
+			if (!isValid) {
+				e.preventDefault();
+				return false;
 			}
+			
+			// If validation passes, form will submit normally to Formspree
+			// Show loading state
+			var submitBtn = form.find('button[type="submit"]');
+			submitBtn.text('Sending...').prop('disabled', true);
 		});
 		
 		// Email validation helper

@@ -11,9 +11,12 @@
 				theme: {
 					extend: {
 						colors: {
-							'dark-bg': '#1b1f22',
-							'dark-card': 'rgba(27, 31, 34, 0.8)',
-							'border-light': 'rgba(255, 255, 255, 0.1)',
+							'dark-bg': '#1c1b21',
+							'light-bg': '#302e36',
+							'text-color': '#e7eff2',
+							'accent-color': '#0b99ea',
+							'dark-card': 'rgba(24, 22, 33, 0.8)',
+							'border-light': 'rgba(231, 239, 242, 0.1)',
 						},
 						fontFamily: {
 							'source': ['Source Sans Pro', 'sans-serif'],
@@ -44,7 +47,6 @@
 						<a href="3dart.html" class="nav-btn">3D Art</a>
 						<a href="2dart.html" class="nav-btn">2D Art</a>
 						<a href="sound.html" class="nav-btn">Sound</a>
-						<a href="about.html" class="nav-btn">About</a>
 						<a href="contact.html" class="nav-btn active">Contact</a>
 					</div>
 					
@@ -62,7 +64,6 @@
 						<a href="3dart.html" class="nav-btn">3D Art</a>
 						<a href="2dart.html" class="nav-btn">2D Art</a>
 						<a href="sound.html" class="nav-btn">Sound</a>
-						<a href="about.html" class="nav-btn">About</a>
 						<a href="contact.html" class="nav-btn active">Contact</a>
 					</div>
 				</div>
@@ -77,52 +78,52 @@
 						<h2 class="text-4xl md:text-5xl font-light mb-8 text-center text-white">Contact</h2>
 						
 						<div class="max-w-2xl mx-auto">
-							<p class="text-center text-lg text-gray-200 mb-8">Get in touch with me for collaborations, commissions, or just to say hello!</p>
+<!--							<p class="text-center text-lg text-gray-200 mb-8">Get in touch with me for collaborations, commissions, or just to say hello!</p>-->
+<!--							-->
+<!--							<form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">-->
+<!--								<div class="grid grid-cols-1 md:grid-cols-2 gap-6">-->
+<!--									<div>-->
+<!--										<label for="name" class="block text-sm font-medium text-white mb-2">Name *</label>-->
+<!--										<input type="text" name="name" id="name" required class="form-input" />-->
+<!--									</div>-->
+<!--									<div>-->
+<!--										<label for="email" class="block text-sm font-medium text-white mb-2">Email *</label>-->
+<!--										<input type="email" name="email" id="email" required class="form-input" />-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								-->
+<!--								<div>-->
+<!--									<label for="subject" class="block text-sm font-medium text-white mb-2">Subject</label>-->
+<!--									<input type="text" name="subject" id="subject" placeholder="What's this about?" class="form-input" />-->
+<!--								</div>-->
+<!--								-->
+<!--								<div>-->
+<!--									<label for="project-type" class="block text-sm font-medium text-white mb-2">Project Type</label>-->
+<!--									<select name="project-type" id="project-type" class="form-select">-->
+<!--										<option value="">Select a category</option>-->
+<!--										<option value="3d-modeling">3D Modeling & VFX</option>-->
+<!--										<option value="2d-art">2D Art & Design</option>-->
+<!--										<option value="sound-design">Sound Design</option>-->
+<!--										<option value="collaboration">Collaboration</option>-->
+<!--										<option value="other">Other</option>-->
+<!--									</select>-->
+<!--								</div>-->
+<!--								-->
+<!--								<div>-->
+<!--									<label for="message" class="block text-sm font-medium text-white mb-2">Message *</label>-->
+<!--									<textarea name="message" id="message" rows="6" placeholder="Tell me about your project or inquiry..." required class="form-textarea"></textarea>-->
+<!--								</div>-->
+<!--								-->
+<!--								<div class="flex justify-center gap-4 pt-4">-->
+<!--									<button type="submit" class="btn-primary">Send Message</button>-->
+<!--									<button type="reset" class="btn-secondary">Clear Form</button>-->
+<!--								</div>-->
+<!--							</form>-->
 							
-							<form id="contact-form" class="space-y-6">
-								<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-									<div>
-										<label for="name" class="block text-sm font-medium text-white mb-2">Name *</label>
-										<input type="text" name="name" id="name" required class="form-input" />
-									</div>
-									<div>
-										<label for="email" class="block text-sm font-medium text-white mb-2">Email *</label>
-										<input type="email" name="email" id="email" required class="form-input" />
-									</div>
-								</div>
-								
-								<div>
-									<label for="subject" class="block text-sm font-medium text-white mb-2">Subject</label>
-									<input type="text" name="subject" id="subject" placeholder="What's this about?" class="form-input" />
-								</div>
-								
-								<div>
-									<label for="project-type" class="block text-sm font-medium text-white mb-2">Project Type</label>
-									<select name="project-type" id="project-type" class="form-select">
-										<option value="">Select a category</option>
-										<option value="3d-modeling">3D Modeling & VFX</option>
-										<option value="2d-art">2D Art & Design</option>
-										<option value="sound-design">Sound Design</option>
-										<option value="collaboration">Collaboration</option>
-										<option value="other">Other</option>
-									</select>
-								</div>
-								
-								<div>
-									<label for="message" class="block text-sm font-medium text-white mb-2">Message *</label>
-									<textarea name="message" id="message" rows="6" placeholder="Tell me about your project or inquiry..." required class="form-textarea"></textarea>
-								</div>
-								
-								<div class="flex justify-center gap-4 pt-4">
-									<button type="submit" class="btn-primary">Send Message</button>
-									<button type="reset" class="btn-secondary">Clear Form</button>
-								</div>
-							</form>
-							
-							<hr class="my-12 border-white/20" />
+<!--							<hr class="my-12 border-white/20" />-->
 							
 							<div class="text-center">
-								<h3 class="text-xl font-light mb-6 text-white">Find me elsewhere</h3>
+								<h3 class="text-xl font-light mb-6 text-white">Find me on Social Media</h3>
 								<div class="flex justify-center gap-4 mb-6">
 									<a href="https://graveyardrabbit.artstation.com/" class="social-icon" title="ArtStation">
 										<i class="fab fa-artstation"></i>
@@ -146,7 +147,7 @@
 
 		<!-- Footer -->
 		<footer class="text-center py-8 border-t border-white/10">
-			<p class="text-gray-400 text-sm">&copy; Work in progress</p>
+			<p class="text-gray-400 text-sm">&copy; 2025 Charlie Vervaecke</p>
 		</footer>
 
 		<!-- Scripts -->
