@@ -16,7 +16,7 @@
 				theme: {
 					extend: {
 						colors: {
-							'dark-bg': '#1c1b21',
+							'dark-bg': '#181621',
 							'light-bg': '#302e36',
 							'text-color': '#e7eff2',
 							'accent-color': '#0b99ea',
@@ -36,10 +36,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	</head>
-	<body class="font-source bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen text-white overflow-x-hidden">
-		<!-- Background overlay -->
-		<div class="fixed inset-0 bg-black opacity-50 z-0"></div>
-		<div class="fixed inset-0 bg-cover bg-center bg-no-repeat z-0" style="background-image: url('images/bg.jpg');"></div>
+	<body class="font-source min-h-screen text-white overflow-x-hidden" style="background: linear-gradient(135deg, #181621 0%, #302e36 100%);">
+		<!-- Background gradient is now applied directly to body -->
 		
 		<!-- Main content -->
 		<div class="relative z-10 min-h-screen flex flex-col">

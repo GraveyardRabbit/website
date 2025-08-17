@@ -1,6 +1,6 @@
 /* Custom styles for the portfolio */
 :root {
-    --dark-bg: #1c1b21;
+    --dark-bg: #181621;
     --light-bg: #302e36;
     --text-color: #e7eff2;
     --accent-color: #0b99ea;
@@ -94,7 +94,7 @@
     color: #ffffff;
 }
 
-/* Background image overlay */
+/* Background gradient overlay */
 body::before {
     content: '';
     position: fixed;
@@ -102,22 +102,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -2;
-}
-
-body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: linear-gradient(135deg, var(--dark-bg) 0%, var(--light-bg) 100%);
-    opacity: 0.9;
     z-index: -1;
 }
 
