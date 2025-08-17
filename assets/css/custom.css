@@ -462,6 +462,39 @@ body::before {
     animation-fill-mode: both;
 }
 
+/* Staggered animation delays */
+.fade-in-delay-1 {
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+.fade-in-delay-2 {
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+}
+
+.fade-in-delay-3 {
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+}
+
+.fade-in-delay-4 {
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
+}
+
+.is-preload .fade-in-delay-1,
+.is-preload .fade-in-delay-2,
+.is-preload .fade-in-delay-3,
+.is-preload .fade-in-delay-4 {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
 /* Responsive navbar improvements */
 @media (max-width: 768px) {
     .nav-btn {
